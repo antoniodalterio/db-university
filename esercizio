@@ -25,7 +25,7 @@ SELECT
 FROM
     `students`
 WHERE
-    YEAR(`date_of_birth`) < "1993"
+    YEAR(`date_of_birth`) < "1994"
 ORDER BY
     `date_of_birth`  
     
@@ -77,7 +77,7 @@ FROM
 --8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
 
 SELECT
-    *
+     COUNT(id) AS "numero_inseganti_senza_numero"
 FROM
     `teachers`
 WHERE
